@@ -1,1 +1,16 @@
 <!--miniprogram/Learn/Learn.wxml-->
+<!-- 普通版本 -->
+<view>普通View版本</view>
+<view>*</view>
+<view>**</view>
+<view>***</view>
+<view>****</view>
+<view>*****</view>
+<view>******</view>
+<!-- 进阶版本 -->
+<view>For 循环版本</view>
+<block wx:for="{{tree}}" wx:for-index="i" wx:key="i">
+  <view class="box">
+    <text wx:for="{{i}}">*</text>
+  </view>
+</block>
