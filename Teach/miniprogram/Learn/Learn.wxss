@@ -1,4 +1,10 @@
 /* miniprogram/Learn/Learn.wxss */
-view {
+.box {
   background-color: #ebebeb;
+  font-weight: bold;
+}
+
+.box .box__input,
+.box .box__textarea  {
+  background-color: #fff;
 }

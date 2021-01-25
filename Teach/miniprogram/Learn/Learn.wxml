@@ -1,7 +1,7 @@
 <!--miniprogram/Learn/Learn.wxml-->
-<view>
-  <text space="emsp">Hello World!</text>
-  <input placeholder="请输入密码" password="{{true}}" />
-  <textarea placeholder="这是个textarea" disabled="{{true}}" />
-</view>
 <image src="//i0.hdslb.com/bfs/archive/6c20bbad53016e4dea1963da6a642940b5fe7ae9.jpg@880w_388h_1c_95q" mode="widthFix"/>
+<view class="box">
+  <text space="emsp">Hello World!</text>
+  <input class="box__input" placeholder="请输入密码" password="{{true}}" />
+  <textarea class="box__textarea" placeholder="这是个textarea" disabled="{{true}}" />
+</view>
