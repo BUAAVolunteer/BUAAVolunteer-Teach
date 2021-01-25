@@ -1,1 +1,4 @@
 /* miniprogram/Learn/Learn.wxss */
+view {
+  background-color: #ebebeb;
+}
