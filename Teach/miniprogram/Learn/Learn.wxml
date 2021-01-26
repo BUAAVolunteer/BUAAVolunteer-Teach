@@ -1,1 +1,18 @@
 <!--miniprogram/Learn/Learn.wxml-->
+<view class="box">
+  <view class="item1">
+    <text>text1</text>
+    <text>text2</text>
+    <text>text3</text>
+  </view>
+  <view class="item2">
+    <text>text1</text>
+    <text>text2</text>
+    <text>text3</text>
+  </view>
+  <view class="item3">
+    <view>text1</view>
+    <view>text2</view>
+    <view>text3</view>
+  </view>
+</view>
