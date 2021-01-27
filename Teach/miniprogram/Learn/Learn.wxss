@@ -1,1 +1,94 @@
 /* miniprogram/Learn/Learn.wxss */
+.loading {
+  animation: loading1 2s infinite linear 0s;
+  border: 2px solid transparent;
+  border-top-color: #e03997;
+  border-bottom-color: #e03997;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 300rpx auto;
+}
+
+@keyframes loading1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading2 {
+  display: flex;
+  flex-wrap: wrap;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto;
+}
+
+.loading2 .item {
+  background-color: #fadbd9;
+  height: 36px;
+  width: 36px;
+  margin: 2px;
+}
+
+.loading2 .item:nth-child(1) {
+  animation: loading2 4s infinite linear 0s;
+}
+
+.loading2 .item:nth-child(2) {
+  animation: loading2 4s infinite linear 0.25s;
+}
+
+.loading2 .item:nth-child(3) {
+  animation: loading2 4s infinite linear 0.5s;
+}
+
+.loading2 .item:nth-child(4) {
+  animation: loading2 4s infinite linear 0.75s;
+}
+
+.loading2 .item:nth-child(5) {
+  animation: loading2 4s infinite linear 1s;
+}
+
+.loading2 .item:nth-child(6) {
+  animation: loading2 4s infinite linear 1.25s;
+}
+
+.loading2 .item:nth-child(7) {
+  animation: loading2 4s infinite linear 1.5s;
+}
+
+.loading2 .item:nth-child(8) {
+  animation: loading2 4s infinite linear 1.75s;
+}
+
+.loading2 .item:nth-child(9) {
+  animation: loading2 4s infinite linear 2s;
+}
+
+@keyframes loading2 {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  5% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  45% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  55% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

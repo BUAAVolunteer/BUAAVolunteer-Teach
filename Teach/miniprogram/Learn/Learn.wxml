@@ -1,1 +1,13 @@
 <!--miniprogram/Learn/Learn.wxml-->
+<view class="loading"></view>
+<view class="loading2">
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+  <view class="item"></view>
+</view>
