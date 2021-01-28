@@ -1,1 +1,53 @@
 /* miniprogram/Learn/Learn.wxss */
+textarea {
+  box-sizing: border-box;
+}
+
+.header {
+  width: 750rpx;
+}
+
+.main {
+  padding: 40rpx;
+}
+
+.main__title {
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+
+.main__title__content {
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+
+.main__title__icon {
+  color: #e54d42;
+}
+
+.main__input,
+.main__textarea {
+  border: 2rpx solid #dcdfe6;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  margin-bottom: 20rpx;
+  padding: 16rpx 15rpx;
+}
+
+.main__textarea {
+  height: 180rpx;
+  width: 670rpx;
+}
+
+.main__btn {
+  align-items: center;
+  border: 1rpx solid #b3d8ff;
+  border-radius: 8rpx;
+  color: #0081ff;
+  display: flex;
+  font-size: 32rpx;
+  justify-content: center;
+  height: 32rpx;
+  margin-top: 40rpx;
+  padding: 25rpx 0;
+}

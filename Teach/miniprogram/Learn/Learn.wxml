@@ -1,1 +1,33 @@
 <!--miniprogram/Learn/Learn.wxml-->
+<!-- 顶部图片 -->
+<image class="header" src="../assets/image/feedback.jpg" mode="widthFix" />
+
+<!-- 主体部分 -->
+<view class="main">
+  <!-- 项目 -->
+  <view class="main__title">
+    <!-- title -->
+    <text class="main__title__content">你想反映的问题发生在哪个项目!</text>
+    <text class="main__title__icon">*</text>
+  </view>
+  <input class="main__input" placeholder="小程序使用问题" />
+
+  <!-- 问题描述 -->
+  <view class="main__title">
+    <!-- title -->
+    <text class="main__title__content">问题描述</text>
+    <text class="main__title__icon">*</text>
+  </view>
+  <textarea class="main__textarea" placeholder="请详细描述你的问题" />
+
+  <!-- 联系方式 -->
+  <view class="main__title">
+    <!-- title -->
+    <text class="main__title__content">联系方式</text>
+    <text class="main__title__icon">*</text>
+  </view>
+  <input class="main__input" placeholder="请填写手机号或邮箱，问题解决后我们会联系您~" />
+
+  <!-- 提交按钮 -->
+  <view class="main__btn">提交反馈</view>
+</view>
