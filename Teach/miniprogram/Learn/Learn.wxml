@@ -1,1 +1,38 @@
 <!--miniprogram/Learn/Learn.wxml-->
+<view class="comment {{open?'animation--all':''}}">
+  <view class="comment__main">
+    <view class="comment__main__title">
+      项目:”夕阳再晨“智能手机教学（1号社区）
+    </view>
+    <view class="comment__main__time">
+      2020-12-27 23：58
+    </view>
+    <view class="comment__main__content">
+      陶征：我在11月8日参加了志愿活动，但是直到现在也没有在志愿北京上加时长，可以加。
+    </view>
+  </view>
+  <view class="comment__input {{open?'animation--input':''}}">
+    <textarea
+      placeholder-class="input-placeholder"
+      placeholder="回复："
+      maxlength="-1"
+      auto-height="{{true}}"
+    >
+    </textarea>
+  </view>
+  <view class="comment__action">
+    <image
+      bindtap="open"
+      class="comment__action__open  {{open?'animation--toleft':'animation--toright'}}"
+      src="../assets/comment.png"
+    />
+    <image
+      class="comment__action__submit {{open?'animation--submit':''}}"
+      src="../assets/submit.png"
+    />
+    <image
+      class="comment__action__delete {{open?'animation--toright':'animation--toleft'}}"
+      src="../assets/delete.png"
+    />
+  </view>
+</view>

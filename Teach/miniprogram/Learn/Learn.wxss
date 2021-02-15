@@ -1,1 +1,180 @@
 /* miniprogram/Learn/Learn.wxss */
+view {
+  box-sizing: border-box;
+}
+
+.comment {
+  background-color: #535353;
+  border-radius: 20rpx;
+  color: #fff;
+  font-size: 27rpx;
+  width: 650rpx;
+  margin: 30rpx auto;
+  padding: 50rpx 20rpx 30rpx;
+}
+
+.comment__main {
+  padding: 0 10rpx;
+}
+
+.comment__main__title {
+  margin-bottom: 16rpx;
+}
+
+.comment__main__time {
+  font-size: 23rpx;
+  margin-bottom: 30rpx;
+}
+
+.comment__main__content {
+  line-height: 41rpx;
+  margin-bottom: 30rpx;
+}
+
+.comment__input {
+  background-color: #707070;
+  border-radius: 20rpx;
+  display: none;
+  min-height: 83rpx;
+  padding: 25rpx;
+  margin-bottom: 30rpx;
+}
+
+.comment__input textarea {
+  width: auto;
+  letter-spacing: 3px;
+}
+
+.input-placeholder {
+  color: lightgray;
+}
+
+.comment__action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comment__action image {
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.comment__action__submit {
+  display: none;
+}
+
+/*
+* 以下为动画部分
+*/
+.animation--all {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10rpx);
+  }
+
+  80% {
+    transform: translateY(10rpx);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animation--toleft {
+  animation: toleft 0.85s forwards;
+}
+
+.animation--toright {
+  animation: toright 0.85s forwards;
+}
+
+@keyframes toleft {
+  0% {
+    transform: translateX(60rpx);
+  }
+
+  40% {
+    transform: rotate(-8deg);
+  }
+
+  60% {
+    transform: translateX(40rpx) rotate(20deg);
+  }
+
+  100% {
+    transform: translateX(0rpx) rotate(0);
+  }
+}
+
+@keyframes toright {
+  0% {
+    transform: translateX(-60rpx);
+  }
+
+  40% {
+    transform: rotate(8deg);
+  }
+
+  60% {
+    transform: translateX(-40rpx) rotate(-20deg);
+  }
+
+  100% {
+    transform: translateX(0rpx) rotate(0);
+  }
+}
+
+.animation--input {
+  display: block;
+  animation: jumpin 0.75s forwards;
+}
+
+@keyframes jumpin {
+  0% {
+    background-color: #535353;
+    transform: translateY(0rpx);
+    width: 0;
+  }
+
+  50% {
+    transform: translateY(-25rpx);
+    width: 610rpx;
+  }
+
+  80% {
+    transform: translateY(30rpx);
+  }
+
+  100% {
+    background-color: #707070;
+    transform: translateY(0);
+  }
+
+}
+
+.animation--submit {
+  animation: rotatein 0.65s forwards;
+  display: block;
+}
+
+@keyframes rotatein {
+  0% {
+    transform: rotate(0);
+    width: 0rpx;
+    height: 0rpx;
+  }
+
+  100% {
+    width: 30rpx;
+    height: 30rpx;
+    transform: rotate(360deg);
+  }
+}
