@@ -31,13 +31,22 @@ view {
   margin-bottom: 30rpx;
 }
 
-.comment__input {
-  background-color: #707070;
+.comment__input,
+.comment__input--display {
   border-radius: 20rpx;
-  display: none;
   min-height: 83rpx;
   padding: 25rpx;
+}
+
+.comment__input {
+  background-color: #707070;
+  display: none;
   margin-bottom: 30rpx;
+}
+
+.comment__input--display {
+  background-color: #99CF9C;
+  letter-spacing: 3rpx;
 }
 
 .comment__input textarea {

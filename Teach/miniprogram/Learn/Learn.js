@@ -6,12 +6,20 @@ Page({
   data: {
     check: false,
     open: false,
+    content: "",
   },
 
   // 打开回复框
   open() {
     this.setData({
       open: !this.data.open,
+    });
+  },
+  // 提交
+  submit() {
+    this.setData({
+      check: true,
+      open: false,
     });
   },
 
